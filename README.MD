@@ -53,3 +53,24 @@ I needed to clean it up so that it was usable for our model. I made the followin
 - **Column for description length**
   - elaborare description reveals the urgent degree or the earnest of the company, could affect the salary
 
+## EDA
+<p >
+<img src="https://github.com/JazenH/ds_first_proj/blob/main/Industry.png" width="450" height="450" />
+<img src="https://github.com/JazenH/ds_first_proj/blob/main/Job_state.png" width="500" height="400" />
+</p>
+
+
+
+
+
+<p >
+  <img src="https://github.com/JazenH/ds_first_proj/blob/main/pivot_1.png" alt="Alt Text" style="float:right" width="300"/>
+  <img src="https://github.com/JazenH/ds_first_proj/blob/main/pivot_2.png" alt="Alt Text" style="float:right" width="250"/>
+
+  <img src="https://github.com/JazenH/ds_first_proj/blob/main/salary_state_top20.png" alt="Alt Text" style="float:left" width="200"/>
+
+</p>
+
+
+
+
