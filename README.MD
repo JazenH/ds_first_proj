@@ -54,6 +54,8 @@ I needed to clean it up so that it was usable for our model. I made the followin
   - elaborare description reveals the urgent degree or the earnest of the company, could affect the salary
 
 ## EDA
+
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables.
 <p >
 <img src="https://github.com/JazenH/ds_first_proj/blob/main/Industry.png" width="450" height="450" />
 <img src="https://github.com/JazenH/ds_first_proj/blob/main/Job_state.png" width="500" height="400" />
@@ -71,6 +73,13 @@ I needed to clean it up so that it was usable for our model. I made the followin
 
 </p>
 
+I listed top 20 industries and states that offer data-related jobs most on the first and second images. Biotechnology and pharmaceutical companies offer overwhelmingly more postions than the rest, followed by insurance companies and computer hardware & software industry. IT service, Health care, Enterprice IT solutions stand from 4th to 6th. From 7th to 20th the trend changes slowly. 
+
+With the average life expectancy keep growing and more and more people pay attention to health maintaince, Biotechnology and pharmaceutical companies will stand in the center of data industry for a long time in the near future. It is definitely the top 1 choice for data scientist candidates. We found that IT service and counsulting are both at very high ranks. Although many companies have their own IT department, the repidly change technology requires put the companies in a postion that they have to consult outside IT specialties frequently. Replacing a team could be a big cost, and companies with a relatively large volume may train their employees continously. IT service jobs would be even more popular as a great supply from outside of company. New grads can start the careers in a large company from entry-level and develop skills from case-practice.
+
+We should some details of average salaries of different seniorities and job titles. Senior job gives a decent boost of payment compared to junior title. We noticed that the payment for manager is not necessarily high than the actual specific employees, however the director is paid noticably higher than other job titles, which is reasonable since normal there would only one director in each department and there are many managers connecting each section. The machine learning engineer is paid more than other job titles. Machine learning and AI are the center of the IT industry nowadays. Giant tech companies are competing in integrating the AI into the products to accelarate the work efficiecy. There would be a great need in building and maintaining the AI systems. The auto-driving, automatic robot and AGI are the future goals in the IT field, data scientists could need hard skills in machine learning to survive.
+
+We also list the top 20 states that pay the most to data scientist. DC and CA are no double the top two states considering the politics and economics status. Illinois offer high payment to data scientist. Chicago is a economics center and there are many great IT service and consultant companies there. New York aquires a mid-top rank which is a small surprise. The reason may be that New York is more of a financial state than a technology state.
 
 
 
