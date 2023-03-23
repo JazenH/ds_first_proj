@@ -81,5 +81,17 @@ We should some details of average salaries of different seniorities and job titl
 
 We also list the top 20 states that pay the most to data scientist. DC and CA are no double the top two states considering the politics and economics status. Illinois offer high payment to data scientist. Chicago is a economics center and there are many great IT service and consultant companies there. New York aquires a mid-top rank which is a small surprise. The reason may be that New York is more of a financial state than a technology state.
 
+## Model building
+We transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.
+
+We tried four different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
+
+We also OLS method in Statsmodels api to check the overall behavior of the feathures 
+
+We tried three different models:
+
+Multiple Linear Regression – Baseline for the model
+Lasso Regression – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+Random Forest – Again, with the sparsity associated with the data, I thought that this would be a good fit.
 
 
