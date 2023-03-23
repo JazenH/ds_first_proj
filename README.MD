@@ -86,12 +86,21 @@ We transformed the categorical variables into dummy variables. I also split the 
 
 We tried four different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
 
-We also OLS method in Statsmodels api to check the overall behavior of the feathures 
+We also OLS method in Statsmodels api to get an comprehensive understanding the linear model. 
 
 We tried three different models:
 
 Multiple Linear Regression – Baseline for the model
 Lasso Regression – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+Ridge Regreesion - As a comparison to Lasso method
 Random Forest – Again, with the sparsity associated with the data, I thought that this would be a good fit.
 
+The baseline model returns a huge cross validation score. From the Statsmodels summary table we can see that there are many features which are irrelevant or should be kicked off based on the p-value. This part of features introduce loads of errors. After applying the penalty terms, both Lasso and Ridge gave
+acceptable scores. 
 
+The difference of Lasso and Ridge is the regularization term. The Ridge Regression utilize an absolute penalty term while the lasso makes use of  square penalty term. The absolute-value method punishes the irrelevant features and could reduce the weights to zero. The square-compresssion methond trys to reduce the affects of less important feature, but punishes all feature's weights.
+
+### - Model performance
+**Random Forest :** MAE = 15.5
+**Linear Regression:** MAE = 19.34
+**Ridge Regression:** MAE = 21.09
