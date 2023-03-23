@@ -101,6 +101,12 @@ acceptable scores.
 The difference of Lasso and Ridge is the regularization term. The Ridge Regression utilize an absolute penalty term while the lasso makes use of  square penalty term. The absolute-value method punishes the irrelevant features and could reduce the weights to zero. The square-compresssion methond trys to reduce the affects of less important feature, but punishes all feature's weights.
 
 ### - Model performance
-**Random Forest :** MAE = 15.5
-**Linear Regression:** MAE = 19.34
+**Random Forest :** MAE = 15.5 \
+**Linear Regression:** MAE = 19.34 \
 **Ridge Regression:** MAE = 21.09
+
+The Ridge Regression performed slightly better than the Lasso Regression. As mentioned above that there are many irrelevant features. The Ridge method is more suited in handling abandon features. As we cen see the Random Forest model gave the best score, which surprices no no because there are many categorical variables. 
+We also use GridSearchCV to optimize the Random Forest model. We obtained a higher scoer, **17.51**. This can be explained by a bias-variance trade off.
+
+## Productionization
+We built a flask API endpoint that was hosted on a local webserver by following along with the TDS tutorial in the reference section above. The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary.
